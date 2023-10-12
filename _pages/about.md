@@ -20,7 +20,9 @@ social: true  # includes social icons at the bottom of the page
 ---
 <br />
 <br />
-Welcome to my homepage. I am Haixiao Wang, currently a PhD candidate advised by Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. I am interested in random matrix theory with its applications in random graphs and hypergraphs. 
+Welcome to my homepage. I am Haixiao Wang, currently a PhD candidate advised by Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. Previously, I received my B.S. in [Physics](https://www.phy.pku.edu.cn/) and B.A. in [Economics](https://nsd.pku.edu.cn/) from [Peking University](https://www.pku.edu.cn/)
+
+At this moment, I am interested in random matrix theory with its applications in random graphs and hypergraphs. Feel free to contact me if any of my research interests you.
 
  <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
