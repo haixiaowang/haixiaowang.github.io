@@ -6,10 +6,9 @@ description: Publications by categories in reversed chronological order. Generat
 nav: true
 nav_order: 1
 ---
-    物有本末，事有终始，知所先后，则近道矣。——《大学》
+    故君子百行，殊涂而同致，循性而动，各附所安。—— 嵇康《与山巨源绝交书》
 
-    Everything has its root and branches, while every story has its beginning and ending. 
-    One is on the path to mastery only if the order of importance is not reversed.
+    In order to continue to exist, desire must have its objects perpetually absent.
 
 <!-- _pages/publications.md -->
 <div class="publications">

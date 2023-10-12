@@ -7,6 +7,11 @@ nav: true
 nav_order: 5
 ---
 
+    物有本末，事有终始，知所先后，则近道矣。——《礼记•大学》
+
+    Everything has its root and branches, while every story has its beginning and ending. 
+    One is on the path to mastery only if the order of the importance is not reversed.
+
 For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
 Organize your courses by years, topics, or universities, however you like!
