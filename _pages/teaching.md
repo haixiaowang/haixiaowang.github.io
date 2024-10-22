@@ -1,12 +1,17 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: true
-nav_order: 6
+nav_order: 2
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+物有本末，事有终始，知所先后，则近道矣。——《礼记•大学》
 
-Organize your courses by years, topics, or universities, however you like!
+Everything has its root and branches, while every story has its beginning and ending. 
+One is on the path to mastery only if the order of the importance is not reversed.
+
+
+
+
