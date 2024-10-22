@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: #<a href='#'>University of California, San Diego</a>
 
 profile:
   align: right
@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 <br />
 <br />
-Welcome to my homepage. I am Haixiao Wang, currently a PhD candidate advised by Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. Previously, I received my B.S. in [Physics](https://www.phy.pku.edu.cn/) and B.A. in [Economics](https://nsd.pku.edu.cn/) from [Peking University](https://www.pku.edu.cn/)
+Welcome to my homepage. I am Hai-xiao Wang, currently a PhD candidate advised by Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. Previously, I received my B.S. in [Physics](https://www.phy.pku.edu.cn/) and B.A. in [Economics](https://nsd.pku.edu.cn/) from [Peking University](https://www.pku.edu.cn/)
 
 At this moment, I am interested in random matrix theory with its applications in random graphs and hypergraphs. Feel free to contact me if any of my research interests you.
 
