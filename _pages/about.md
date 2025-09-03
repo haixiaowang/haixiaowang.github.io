@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>9500 Gilman Drive</p>
-    <p>La Jolla, CA 92093</p>
+    <p>807 Van Vleck Hall </p>
+    <p>480 Lincoln Dr, Madison, WI 53706</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -19,9 +19,9 @@ social: true # includes social icons at the bottom of the page
 
 <br />
 <br />
-Welcome to my homepage. I am Hai-xiao Wang, currently a PhD candidate advised by Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. Previously, I received my B.S. in [Physics](https://www.phy.pku.edu.cn/) and B.A. in [Economics](https://nsd.pku.edu.cn/) from [Peking University](https://www.pku.edu.cn/)
+Welcome to my homepage. I am Hai-xiao Wang, currently a [Van Vleck](https://math.wisc.edu/staff/wang-hai-xiao/) visiting assistant professor at the Department of Mathematics, University of Wisconsin-Madison. Previously, I received my Ph.D. in mathematics under the supervision of Professor [Ioana Dumitriu](https://math.ucsd.edu/people/profiles/ioana-dumitriu ) at the [Department of Mathematics](https://math.ucsd.edu/), University of California, San Diego. Before that, I received my B.S. in [Physics](https://www.phy.pku.edu.cn/) and B.A. in [Economics](https://nsd.pku.edu.cn/) from [Peking University](https://www.pku.edu.cn/)
 
-At this moment, I am interested in random matrix theory with its applications in random graphs and hypergraphs. Feel free to contact me if any of my research interests you.
+At this moment, I am interested in random matrix theory with its applications in statistics and data science problems. Feel free to contact me if any of my research interests you.
 
 
  <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
