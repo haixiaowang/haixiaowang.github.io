@@ -1,3 +1,9 @@
+# Hai-Xiao Wang's personal website
+
+This website now uses **al-folio v1.2**. See [UPGRADE.md](UPGRADE.md) for the current
+build, deployment, and theme-maintenance instructions. The template documentation
+below is retained for reference.
+
 # al-folio
 
 <div align="center">

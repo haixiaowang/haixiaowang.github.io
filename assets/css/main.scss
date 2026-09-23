@@ -3,23 +3,51 @@
 ---
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "tabs",
-  "typograms",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular",
-  "tabler-icons/tabler-icons.scss",
-  "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  // UW digital palette: Spirit Purple, with Accent Lavender for dark mode.
+  // https://www.washington.edu/brand/brand-elements/colors/
+  $purple-color: #4b2e83,
+  $cyan-color: #c5b4e3,
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+html[data-theme="dark"] {
+  --global-hover-text-color: #1c1c1d;
+}
+
+.publications ol.bibliography li .abbr abbr a {
+  color: inherit;
+}
+
+// The compatibility layer hides .collapse, including an expanded desktop navbar.
+// Keep its mobile show/hide behavior while restoring the desktop menu.
+@media (min-width: 576px) {
+  .navbar .navbar-collapse-main {
+    visibility: visible;
+  }
+}
