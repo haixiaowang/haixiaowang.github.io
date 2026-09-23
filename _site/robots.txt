@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://haixiaowang.github.io/sitemap.xml
