@@ -19,6 +19,10 @@ In order to continue to exist, desire must have its objects perpetually absent.
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query !@phdthesis %}
+
+<h2 class="bibliography" id="dissertation">Dissertation</h2>
+
+{% bibliography --query @phdthesis --group_by none %}
 
 </div>
