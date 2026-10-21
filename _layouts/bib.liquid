@@ -1,6 +1,6 @@
 ---
 ---
-<div class="row">
+<div class="row" data-publication-topic="{{ entry.topic | escape }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -151,6 +151,11 @@
         >
           {{- more_authors_hide -}}
         </span>
+      {% endif %}
+      {% if author_array_size > 1 %}
+        {% unless entry.key == 'Wang2024OptimalER' or entry.key == 'Serret2026Attention' %}
+          <span class="author-order" title="Author names are listed in alphabetical order">\((\alpha\mkern-1mu{-}\mkern-1mu\beta)\)</span>
+        {% endunless %}
       {% endif %}
       {% if entry.annotation %}
         <i

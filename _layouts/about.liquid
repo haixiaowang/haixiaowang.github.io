@@ -58,10 +58,32 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      {% if page.selected_paper_groups %}
+        <section aria-labelledby="featured-projects">
+          <h2 id="featured-projects">Featured Projects</h2>
+          {% if page.selected_paper_groups.papers %}
+            <div class="publications">
+              {% for paper_arxiv in page.selected_paper_groups.papers %}
+                {% bibliography --query @*[arxiv={{ paper_arxiv }}] --group_by none %}
+              {% endfor %}
+            </div>
+          {% else %}
+            {% for group in page.selected_paper_groups %}
+              <section class="publications" aria-labelledby="selected-{{ group.title | slugify }}">
+                <h3 class="bibliography" id="selected-{{ group.title | slugify }}">{{ group.title }}</h3>
+                {% for paper_arxiv in group.papers %}
+                  {% bibliography --query @*[arxiv={{ paper_arxiv }}] --group_by none %}
+                {% endfor %}
+              </section>
+            {% endfor %}
+          {% endif %}
+        </section>
+      {% else %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %}
     {% endif %}
 
     <!-- Social -->

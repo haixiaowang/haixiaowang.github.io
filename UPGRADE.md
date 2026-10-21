@@ -14,14 +14,22 @@ in `Gemfile`, and `Gemfile.lock` records the resolved dependencies.
 - Moved email and social links from `_config.yml` into `_data/socials.yml`.
 - Moved the homepage's disabled announcements and latest-posts settings into
   `_pages/about.md`, as required by the new theme.
-- Kept four local overrides, all based on the new core theme:
-  `_layouts/about.liquid` preserves the "Selected publications" heading;
-  `_layouts/bib.liquid` displays volume/issue/pages and uses HTTPS arXiv links.
+- Kept five local overrides, all based on the new core theme:
+  `_layouts/about.liquid` displays Featured Projects using the ordered arXiv IDs
+  in `_pages/about.md` (`selected_paper_groups`), supporting named groups or a
+  single `papers` list without topic headings;
+  `_layouts/bib.liquid` displays volume/issue/pages, uses HTTPS arXiv links, and
+  marks alphabetical author lists, excluding the two specified papers, and emits
+  topic metadata for the Research page's year/topic grouping controls.
   `assets/css/main.scss` applies UW Spirit Purple (`#4b2e83`) and the accessible
   dark-mode Accent Lavender (`#c5b4e3`), and keeps the desktop navbar visible
-  when the Bootstrap compatibility layer is enabled.
+  when the Bootstrap compatibility layer is enabled. Home's research-area
+  headings match the Research page's year labels in theme color while preserving
+  heading levels.
   `_includes/plugins/al_search_assets.liquid` excludes news and projects from the
   search menu; `_config.yml` disables post results with `posts_in_search: false`.
+  `assets/js/bibsearch.js` retains a debounce fix for the optional publication
+  filter, which is currently disabled (`bib_search: false`).
   `.al-folio-overrides.yml` records their reviewed upstream versions and checksums.
 - Enabled the official Bootstrap compatibility package for existing page markup.
   This compatibility layer is supported through v1.2 and should be reviewed before
@@ -32,6 +40,13 @@ in `Gemfile`, and `Gemfile.lock` records the resolved dependencies.
   demo's retired Stamen basemap with Carto.
 - Removed the inherited Medium and Google Blog demo feeds from `external_sources`.
   The local blog content remains in the repository.
+- Research uses `topic` fields in `_bibliography/papers.bib` and the ordered
+  `publication_topic_order` list in `_pages/publications.md`. The local
+  `assets/js/publication-views.js` switches between year and topic grouping;
+  the dissertation stays at the bottom in either view.
+  Year groups use `arxiv_year`, the year of the first arXiv submission. Set this
+  field when adding a paper, and keep `year` as the publication year used in
+  citations. The display-only `arxiv_year` field is excluded from exported BibTeX.
 - Updated the deployment workflow to install Node dependencies and ImageMagick.
   Publishing still builds `main` and deploys the generated site to `gh-pages`.
 
@@ -69,7 +84,7 @@ Docker is also supported with `docker compose up --build` on port 8080.
    `bundle exec al-folio upgrade overrides diff PATH`. Merge the upstream changes,
    then record that review with `bundle exec al-folio upgrade overrides accept PATH`.
 6. Build and inspect the homepage, Research page, teaching page, mobile navigation,
-   dark mode, and publication search before publishing.
+   dark mode, and year/topic grouping before publishing.
 
 Keep personal content and site configuration when upgrading; do not replace them
 with the template's sample content. The official

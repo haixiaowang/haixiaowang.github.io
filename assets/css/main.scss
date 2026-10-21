@@ -44,6 +44,72 @@ html[data-theme="dark"] {
   color: inherit;
 }
 
+.author-order {
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.publication-view-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.publication-view-button {
+  border: 1px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.8rem;
+  background: transparent;
+  color: var(--global-theme-color);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  cursor: pointer;
+
+  &[aria-pressed="true"],
+  &:hover {
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+}
+
+.author-order-note {
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+
+  .author-order {
+    font-size: 0.85em;
+  }
+}
+
+.publications h2.bibliography,
+.publications h3.bibliography {
+  color: var(--global-theme-color);
+}
+
+// Keep Home's subsection headings at h3 while matching the Research year labels.
+.publications h3.bibliography {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: right;
+}
+
 // The compatibility layer hides .collapse, including an expanded desktop navbar.
 // Keep its mobile show/hide behavior while restoring the desktop menu.
 @media (min-width: 576px) {

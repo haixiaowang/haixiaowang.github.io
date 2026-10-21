@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
 subtitle: #<a href='#'>University of California, San Diego</a>
 
@@ -18,6 +18,16 @@ announcements:
 latest_posts:
   enabled: false
 selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_paper_groups:
+  #- title: Mathematics of Data Science
+  #  papers:
+  #    - "2304.13139"
+  #- title: Random Matrix Theory
+    papers:
+      - "2304.13139"
+      - "2609.26615"
+      - "2610.22658"
+      - "2508.01456"
 social: true # includes social icons at the bottom of the page
 ---
 
